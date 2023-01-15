@@ -10,8 +10,9 @@ export const getMovies = (movie: string) => {
       if (!response.ok) throw new Error("Feching data failed.");
 
       const responseData = await response.json();
+      console.log("responseData", responseData);
 
-      if (responseData.length) {
+      if (responseData.Response === "True") {
         dispatch(movieActions.getMovies(responseData));
       }
     } catch (err) {

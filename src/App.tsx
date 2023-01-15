@@ -1,13 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
+import MovieForm from "./components/MovieForm";
+import MoviesList from "./components/MoviesList";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="">
-    <h1> Search for Movies:</h1>
-  </div>;
+  return (
+    <div>
+      <h1> Search for Movies:</h1>
+      <MovieForm />
+      <MoviesList />
+    </div>
+  );
 }
 
 export default App;

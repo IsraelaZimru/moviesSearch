@@ -3,6 +3,7 @@ import { TMovie } from "../data/types";
 
 const initialState: {
   movies: TMovie[];
+  totalResults?: number;
 } = {
   movies: [],
 };
@@ -12,7 +13,8 @@ const movieSlice = createSlice({
   initialState,
   reducers: {
     getMovies(state, action) {
-      state.movies = action.payload;
+      state.movies = action.payload.Search;
+      state.totalResults = +action.payload.totalResults;
     },
   },
 });
