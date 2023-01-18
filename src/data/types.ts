@@ -30,3 +30,11 @@ export type TMovie = {
   Website?: string;
   Response?: string;
 };
+
+export type TProps = {
+  Poster: string;
+  Title: string;
+  Type: string;
+  Year: string;
+  imdbID: string;
+};

@@ -4,7 +4,7 @@ import MoviesList from "./components/MoviesList";
 
 function App() {
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <h1> Search for Movies:</h1>
       <MovieForm />
       <MoviesList />

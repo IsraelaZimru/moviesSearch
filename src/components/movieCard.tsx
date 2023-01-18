@@ -1,10 +1,4 @@
-type TProps = {
-  Poster: string;
-  Title: string;
-  Type: string;
-  Year: string;
-  imdbID: string;
-};
+import { TProps } from "../data/types";
 
 export default function MovieCard({
   Poster,
@@ -14,8 +8,8 @@ export default function MovieCard({
   imdbID,
 }: TProps) {
   return (
-    <div>
-      <img src={Poster} />
+    <div className="child">
+      <img src={Poster} height="200px" />
       <footer>
         <p>{Title}</p>
         <small>{Year}</small>
